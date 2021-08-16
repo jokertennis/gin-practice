@@ -35,6 +35,23 @@ step5 hello,worldを確認する。
 curl http://localhost:8080/hello
 ```
 
+# mysql_containerからmysqlのログインをする手順
+
+step1 環境構築手順を参考にmysql_containerを立ち上げる。  
+
+step2 mysql_containerに入る。  
+```
+docker exec -it mysql_container_ID bash
+```
+step3 mysqlのログインをする。  
+```
+mysql -u rootuser -p
+```
+step4 mysqlのパスワードを入力する。  
+```
+rootpass
+```
+
 ## 主な参考文献
 
 https://qiita.com/greenteabiscuit/items/ef4ed1dfda0d396d9d0f
