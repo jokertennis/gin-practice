@@ -15,25 +15,25 @@ DBサーバ :mysql8.0
 ## 環境構築手順
 
 step1 gin-practiceのリポジトリをcloneする。  
-'''
+```
 git clone https://github.com/jokertennis/gin-practice.git
-'''
+```
 step2 docker-imageを作成する。  
-'''
+```
 docker-compose build
-'''
+```
 step3 docker-containerを作成する。  
-'''
+```
 docker-compose up -d
-'''
+```
 step4 go_container,mysql_containerが立ち上がっていることを確認する。  
-'''
+```
 docker-compose ps
-'''
+```
 step5 hello,worldを確認する。  
-'''
+```
 curl http://localhost:8080/hello
-'''
+```
 
 ## 主な参考文献
 
