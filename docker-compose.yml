@@ -25,12 +25,3 @@ services:
       MYSQL_PASSWORD: rootpass
     ports:
       - 13306:3306
-  web:
-    build:
-      context: ./nginx
-    image: nginx:1.15.8
-    container_name: nginx_container
-    ports:
-      - 80:80
-    depends_on:
-      - app

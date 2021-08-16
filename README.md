@@ -2,16 +2,48 @@
 
 当リポジトリはオプティムメンバーの開発環境を統一するために作成したリポジトリである。
 
+## 利用する条件
+Docker,docker-compose,Gitをインストールしていること。
+
 ## 使用技術
 
 言語 :golang 1.16.7  
 Webアプリケーションフレームワーク :Gin  
-webサーバ :nginx 1.15.8  
-アプリケーションサーバ :golang  
+webサーバ :Gin  
 DBサーバ :mysql8.0
 
 ## 環境構築手順
 
+step1 gin-practiceのリポジトリをcloneする。  
+'''
+
+git clone https://github.com/jokertennis/gin-practice.git
+
+'''  
+step2 docker-imageを作成する。  
+'''
+
+docker-compose build
+
+'''  
+step3 docker-containerを作成する。  
+'''
+
+docker-compose up -d
+
+'''  
+step4 go_container,mysql_containerが立ち上がっていることを確認する。  
+'''
+
+docker-compose ps
+
+'''  
+step5 hello,worldを確認する。  
+'''
+
+curl http://localhost:8080/hello
+
+'''
 
 
 ## 主な参考文献
