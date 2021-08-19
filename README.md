@@ -49,7 +49,7 @@ docker exec -it mysql_container_ID bash
 ```
 step3 mysqlのログインをする。  
 ```
-mysql -u rootuser -p
+mysql -u root -p
 ```
 step4 mysqlのパスワードを入力する。  
 ```
